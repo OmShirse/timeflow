@@ -873,5 +873,10 @@ if (state.running) { updateTimerUI(); timerInterval = setInterval(tickTimer, 100
 if (state.settings.name) { document.getElementById('userNameEl').textContent = state.settings.name; document.getElementById('avatarEl').textContent = state.settings.name[0].toUpperCase(); }
 renderProjects(); renderEntries(); updateStats();
 </script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js');
+  }
+</script>
 </body>
 </html>
