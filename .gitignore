@@ -1,0 +1,16 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# PWA cache (generated at runtime, not source)
+sw.js.map
+
+# Bash scripts used during setup (not part of the project)
+*.bash
+*.sh
